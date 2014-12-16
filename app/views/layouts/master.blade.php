@@ -36,8 +36,12 @@
 
 <body>
 
+  @include('includes.headernav')
+
   <div class="container">
+    @include('includes.notification')
     @yield('content')
+    @include('includes.footer')
   </div>
 
   {{-- Javascripts --}}
