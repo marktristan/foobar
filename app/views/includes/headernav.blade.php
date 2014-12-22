@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{{ url('/') }}}">Project Name</a>
+      <a data-pjax="#main" class="navbar-brand" href="{{{ url('/') }}}">Project Name</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -22,7 +22,7 @@
           <input type="password" placeholder="Password" class="form-control" name="password">
         </div>
         <button type="button" class="btn btn-primary">Sign in</button> <!-- Replace button to submit if it will use as login -->
-        <a class="btn btn-default" href="{{{ url('account/create') }}}">Register</a>
+        <a data-pjax="#main" class="btn btn-default" href="{{{ url('account/create') }}}">Register</a>
       </form>
     </div><!--/.navbar-collapse -->
   </div>

@@ -40,13 +40,19 @@
 
   <div class="container">
     @include('includes.notification')
-    @yield('content')
+    <div id="main">@yield('content')</div>
     @include('includes.footer')
   </div>
 
   {{-- Javascripts --}}
   {{ HTML::script('js/jquery-1.11.1.min.js') }}
   {{ HTML::script('js/bootstrap.min.js') }}
+  {{ HTML::script('js/jquery.pjax.js') }}
+  <script>
+    $(function(){
+      $(document).pjax('a');
+    });
+  </script>
 
 </body>
 
