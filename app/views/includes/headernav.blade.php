@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project Name</a>
+      <a class="navbar-brand" href="{{{ url('/') }}}">Project Name</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -21,7 +21,8 @@
         <div class="form-group">
           <input type="password" placeholder="Password" class="form-control" name="password">
         </div>
-        <button type="button" class="btn btn-success">Sign in</button> <!-- Replace button to submit if it will use as login -->
+        <button type="button" class="btn btn-primary">Sign in</button> <!-- Replace button to submit if it will use as login -->
+        <a class="btn btn-default" href="{{{ url('account/create') }}}">Register</a>
       </form>
     </div><!--/.navbar-collapse -->
   </div>
