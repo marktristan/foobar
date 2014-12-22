@@ -16,9 +16,4 @@ Route::get('/', function()
 	return View::make('home');
 });
 
-// Route::get('/', 'HomeController@showWelcome');
-
-Route::get('members', function()
-{
-  return 'test';
-});
+Route::resource('account', 'AccountsController', ['only' => ['create']]);
