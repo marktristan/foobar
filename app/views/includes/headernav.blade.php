@@ -13,6 +13,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Active Link</a></li>
         <li><a href="#">Another Link</a></li>
+        <li><a href="{{{ url('/') }}}">Non-pjax Link</a></li>
       </ul>
       <form class="navbar-form navbar-right" role="form" method="post" action="{{{ url('/') }}}">
         <div class="form-group">
